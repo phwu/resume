@@ -1,7 +1,8 @@
 var app = require('express')();
 var http = require('http').Server(app);
 
-app.set('port', (process.env.PORT || 3000));
+app.set('ip', (process.env.IP || "127.0.0.1"));
+app.set('port', (process.env.PORT || 8080));
 /****************
 *
 * ROUTING GOODNESS
@@ -29,6 +30,6 @@ app.get('/polly.json', function(req, res){
 *****************/
 
 // let's listen
-http.listen(app.get('port'), function(){
+http.listen(app.get('port'), app.get('ip'), function(){
   console.log('listening on *:' + app.get('port'));
 });
