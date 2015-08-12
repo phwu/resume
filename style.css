@@ -1,0 +1,30 @@
+body {
+  font-family: 'Asap', sans-serif;
+}
+.header-plate {
+  background-color: #7DBE97;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 8px solid #C6E4D2;
+  color: #fff;
+  font-size: 1.1em;
+}
+.header-plate small {
+  color: #F2F6ED;
+}
+.header-plate a {
+ color: #3A6C82;
+}
+.header-plate a:hover {
+  color: #548195;
+}
+span .big {
+  font-size: 1.1em;
+  line-height: 200%;
+  background-color: #7DBE97;
+}
+footer {
+  text-align: center;
+  background-color: #7DBE97;
+  line-height: 200%;
+}

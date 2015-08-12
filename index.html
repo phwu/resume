@@ -1,0 +1,107 @@
+<!doctype html>
+<html ng-app="resumeApp">
+  <head>
+    <title>Resume</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body ng-controller="ResumeCtrl">
+    <div class="header-plate">
+      <div class="container">
+        <div class="row">
+        <!-- header template -->
+          <div class="col-md-2" hidden="true">
+            <img width="100%" src="https://media.licdn.com/media/p/2/005/09c/3f4/3f28c50.jpg" alt="..." class="img-circle">
+          </div>
+          <div class="col-md-10">
+            <h1>{{resume.name}} <small>{{resume.title}}</small></h1>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="glyphicon glyphicon-home"></span> {{resume.address.city}}, {{resume.address.state}} <br/>
+                <span class="glyphicon glyphicon-earphone"></span> {{resume.phone}}<br/>
+                <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:{{resume.email}}">{{resume.email}}</a>
+              </div>
+              <div class="col-md-4">
+                <span class="glyphicon glyphicon-globe"></span> <a href="http://{{resume.www}}">{{resume.www}}</a> <br/>
+                <span class="glyphicon glyphicon-console"></span> <a href="https://{{resume.repo}}">{{resume.repo}}</a> <br/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h3 ng-hide="resume.experience.length === 0">Experience</h3>
+      <!-- job experience template -->
+      <div class="row" ng-repeat="job in resume.experience">
+        <div class="col-md-4 text-right">
+          <h4>{{job.company}} <small>{{job.title}}</small></h4>
+          <span>{{job.startDate | date : 'MM.yyyy'}} - {{job.endDate | date: 'MM.yyyy'}}</span>
+        </div>
+        <div class="col-md-8">
+          <p>{{job.description}}</p>
+          <ul>
+            <li ng-repeat="project in job.projects">{{project.description}}</li>
+          </ul>
+        </div>
+      </div>
+      <h3 ng-hide="resume.education.length === 0">Education</h3>
+      <!-- education template -->
+      <div class="row" ng-repeat="school in resume.education">
+        <div class="col-md-4 text-right">
+          <h4>{{school.school}}</h4>
+          <span>{{school.startDate | date : 'MM.yyyy'}} - {{school.endDate | date : 'MM.yyyy'}}</span>
+        </div>
+        <div class="col-md-8">
+          <div ng-repeat="degree in school.degree">{{degree.name}}</div>
+          <div ng-hide="school.minor.length === 0">Minor(s):</div>
+          <div ng-repeat="minor in school.minor">{{minor.name}}</div>
+          <span>GPA: {{school.gpa}}</span>
+        </div>
+      </div>
+      <h3 ng-hide="resume.volunteering.length === 0">Volunteering</h3>
+      <!-- volunteering template -->
+      <div class="row" ng-repeat="vol in resume.volunteering">
+        <div class="col-md-4 text-right">
+          <h4>{{vol.organization}}</h4>
+          <span>{{vol.startDate | date : 'MM.yyyy'}} - {{vol.endDate | date : 'MM.yyyy'}}</span>
+        </div>
+        <div class="col-md-8">{{vol.description}}</div>
+      </div>
+      <h3 ng-hide="resume.skills.length === 0">Skills</h3>
+      <!-- skills template -->
+      <div class="row">
+        <div class="col-md-12">
+          <span ng-repeat="skill in resume.skills"><span class="label label-default big">{{skill.name}}</span> </span>
+        </div>
+      </div>
+      <h3 ng-hide="resume.certificates.length === 0">Certificates</h3>
+      <!-- certificates template -->
+      <div class="row">
+        <div class="col-md-12">
+          <span ng-repeat="cert in resume.certificates"><span class="label label-default big">{{cert.name}}</span> </span>
+        </div>
+      </div>
+      <h3 ng-hide="resume.hobbies.length === 0">Hobbies</h3>
+      <!-- hobbies template -->
+      <div class="row">
+        <div class="col-md-12">
+          <span ng-repeat="hobby in resume.hobbies"><span class="label label-default big">{{hobby.name}}</span> </span>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+  <footer>
+    <div>This resume was built using AngularJS, JSON and CSS. By Polly Hwu 2015.</div>
+  </footer>
+</html>

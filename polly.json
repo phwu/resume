@@ -1,0 +1,99 @@
+{
+  "imgUrl" : "https://media.licdn.com/media/p/2/005/09c/3f4/3f28c50.jpg",
+  "name" : "Polly Hwu",
+  "title" : "Application Developer",
+  "address" : {
+    "street" : "917 Balaye Ridge Cir Apt 301",
+    "city" : "Tampa",
+    "state" : "FL",
+    "zip" : 33619
+  },
+  "phone" : "727-687-5287",
+  "email" : "pollyhwu@gmail.com",
+  "www" : "www.pollyhwu.com",
+  "repo" : "www.github.com/phwu",
+  "experience" : [
+    {
+      "company" : "Chase",
+      "title" : "Application Developer",
+      "startDate" : "2013-07-01T00:00:00.000Z",
+      "endDate" : "Current",
+      "description" : "Currently working on the distributed web applications team for Global Payments, ACH. Many of the applications are for internal use and are mainly built using Java (Spring). The applications use MSSQL 08/12 and HP SQLMX. The team has used Waterfall methodology in the past however we are beginning to integrate to Agile using Scrum.",
+      "projects" : [
+        {
+          "description" : "Build, support, maintain 3 Java applications on all tiers of the application stack--includes enhancing the applications with new requirements from client, fixing defects in the backlog, streamlining deployment process and preparing the environments."
+        },
+        {
+          "description" : "Support and maintain 1 Windows Server that hosts several Windows services for automated processing and 2 internal web applications--includes modifying services (C#) to accommodate business needs/requirements, managing databases, and supporting technology and business partners."
+        },
+        {
+          "description" : "Strong engagement throughout the SDLC-- suggestions to requirements for clarity, detailed design sessions and documentation with the team in a collaborative environment, coding and performing code reviews, assisting in testing and remediating defects, and preparing and priming for installation."
+        },
+        {
+          "description" : "Familiar with all of the applications' environments and responsible for streamlining the deployment process."
+        },
+        {
+          "description" : "Communicate and collaborate with multiple teams to troubleshoot issues and derive solutions."
+        }
+      ]
+    },
+    {
+      "company" : "CITT, University of Florida",
+      "title" : "Educational Technician",
+      "startDate" : "2013-02-01T00:00:00.000Z",
+      "endDate" : "2011-09-01T00:00:00.000Z",
+      "description" : "Worked on static web sites that were hosted on an online learning platform (Sakai). These web sites were courses for professors who taught online courses or had to present online material to students.",
+      "projects" : [
+        {
+          "description" : "Wrote a lot of vanilla XHTML and CSS based on screen mockups provided by designers."
+        },
+        {
+          "description" : "Created graphics (headers) for the online courses based on images provided using Adobe Photoshop."
+        },
+        {
+          "description" : "Assist faculty on managing their online course e.g. teach them how to edit pages for new material, create quizzes, create forum threads."
+        }
+      ]
+    }
+  ],
+  "education" : [
+    {
+      "school" : "University of Florida",
+      "degree" : [
+        {"name" : "Bachelor of Science in Computer Science"}
+      ],
+      "minor" : [
+        {"name" : "Sales Engineering"}
+      ],
+      "startDate" : "2009-08-01T00:00:00.000Z",
+      "endDate" : "2013-05-01T00:00:00.000Z",
+      "gpa" : 3.46
+    }
+  ],
+  "volunteering" : [
+    {
+      "organization" : "Coder Dojo Tampa Bay",
+      "title" : "Mentor",
+      "description" : "Bi-weekly meet ups at the library assisting children in coding exercises. Children are generally ages 8 through 14 and utilize resources such as CodeHS and Codecademy. One of my duties is to ensure children understand the fundamental principles of coding.",
+      "startDate" : "2015-02-01T00:00:00.000Z",
+      "endDate" : "Current"
+    }
+  ],
+  "skills" : [
+    {"name" : "Java"},
+    {"name" : "Javascript"},
+    {"name" : "HTML"},
+    {"name" : "CSS"},
+    {"name" : "JSON"},
+    {"name" : "Linux"},
+    {"name" : "SQL (RDMS)"},
+    {"name" : "MongoDB"},
+    {"name" : "Jenkins (CI)"}
+  ],
+  "certificates" : [],
+  "hobbies" : [
+    {"name" : "Side Projects"},
+    {"name" : "Movies"},
+    {"name" : "Travel"}
+  ]
+}
