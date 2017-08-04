@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="resources/style.css">
   </head>
   <body ng-controller="ResumeCtrl">
     <div class="header-plate">
@@ -29,7 +29,7 @@
                 <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:{{resume.email}}">{{resume.email}}</a>
               </div>
               <div class="col-md-4">
-                <span class="glyphicon glyphicon-globe"></span> <a href="http://{{resume.www}}">{{resume.www}}</a> <br/>
+                <span class="glyphicon glyphicon-globe" ng-hide="resume.www.length === 0"></span> <a href="http://{{resume.www}}">{{resume.www}}</a> <br/>
                 <span class="glyphicon glyphicon-console"></span> <a href="https://{{resume.repo}}">{{resume.repo}}</a> <br/>
               </div>
             </div>
@@ -52,6 +52,14 @@
           </ul>
         </div>
       </div>
+    <h3 ng-hide="resume.allSkills.length === 0">Skills</h3>
+    <!-- skills template -->
+    <div ng-repeat="type in resume.allSkills">
+        <h4>{{type.type}}</h4>
+        <div class="row"><div class="col-md-12">
+            <span ng-repeat="skill in type.skillList"><span class="label label-default big">{{skill.name}}</span> </span>
+        </div></div>
+    </div>
       <h3 ng-hide="resume.education.length === 0">Education</h3>
       <!-- education template -->
       <div class="row" ng-repeat="school in resume.education">
@@ -75,13 +83,6 @@
         </div>
         <div class="col-md-8">{{vol.description}}</div>
       </div>
-      <h3 ng-hide="resume.skills.length === 0">Skills</h3>
-      <!-- skills template -->
-      <div class="row">
-        <div class="col-md-12">
-          <span ng-repeat="skill in resume.skills"><span class="label label-default big">{{skill.name}}</span> </span>
-        </div>
-      </div>
       <h3 ng-hide="resume.certificates.length === 0">Certificates</h3>
       <!-- certificates template -->
       <div class="row">
@@ -99,7 +100,7 @@
     </div>
     <br/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="main.js"></script>
+    <script src="resources/main.js"></script>
   </body>
   <footer>
     <div>This resume was built using AngularJS, JSON and Bootstrap. By Polly Hwu 2015.</div>

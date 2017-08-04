@@ -1,59 +1,53 @@
 {
   "imgUrl" : "https://media.licdn.com/media/p/2/005/09c/3f4/3f28c50.jpg",
   "name" : "Polly Hwu",
-  "title" : "Application Developer",
+  "title" : "Software Engineer",
   "address" : {
-    "street" : "917 Balaye Ridge Cir Apt 301",
+    "street" : "",
     "city" : "Tampa",
     "state" : "FL",
-    "zip" : 33619
+    "zip" : 33603
   },
-  "phone" : "727-687-5287",
+  "phone" : "(727)687-5287",
   "email" : "pollyhwu@gmail.com",
-  "www" : "www.pollyhwu.com",
+  "www" : "",
   "repo" : "www.github.com/phwu",
   "experience" : [
     {
+      "company" : "myMatrixx",
+      "title" : "Software Engineer II",
+      "startDate" : "2015-09-08",
+      "endDate" : "Current",
+      "description" : "Fullstack engineer working on Spring applications using Java 7 and Java 8 with SQL Server 2012.",
+      "projects" : [
+        {"description" : "Design, built, maintain and support Physician Dispensed In Network engine which loaded 835 EDI files with claim information that is processed through a regulatory rules and pricing engine before adjudication via web service. Created scheduled jobs to check adjudication status for post processing and integrate dataset seamlessly into the main Portal application." },
+        {"description" : "Enhance, support and maintain Portal/Mars."},
+        {"description" : "Made Web Services even better"},
+        {"description" : "Add and maintain build jobs on TeamCity."},
+        {"description" : "Document deployment process for applications and process/work flow of important business functions such as State Reporting, ARM, Reindexing for Out of Network, and Bill Pay."}
+      ]
+    },
+    {
       "company" : "Chase",
       "title" : "Application Developer",
-      "startDate" : "2013-07-01T00:00:00.000Z",
-      "endDate" : "Current",
-      "description" : "Currently working on the distributed web applications team for Global Payments, ACH. Many of the applications are for internal use and are mainly built using Java (Spring). The applications use MSSQL 08/12 and HP SQLMX. The team has used Waterfall methodology in the past however we are beginning to integrate to Agile using Scrum.",
+      "startDate" : "2013-07-01",
+      "endDate" : "2015-09-08",
+      "description" : "Distributed applications for ACH. Majority of applications were internal and built in Spring and Java 6. The applications used MSSQL 08/12 and HP SQLMX.",
       "projects" : [
-        {
-          "description" : "Build, support, maintain 3 Java applications on all tiers of the application stack--includes enhancing the applications with new requirements from client, fixing defects in the backlog, streamlining deployment process and preparing the environments."
-        },
-        {
-          "description" : "Support and maintain 1 Windows Server that hosts several Windows services for automated processing and 2 internal web applications--includes modifying services (C#) to accommodate business needs/requirements, managing databases, and supporting technology and business partners."
-        },
-        {
-          "description" : "Strong engagement throughout the SDLC-- suggestions to requirements for clarity, detailed design sessions and documentation with the team in a collaborative environment, coding and performing code reviews, assisting in testing and remediating defects, and preparing and priming for installation."
-        },
-        {
-          "description" : "Familiar with all of the applications' environments and responsible for streamlining the deployment process."
-        },
-        {
-          "description" : "Communicate and collaborate with multiple teams to troubleshoot issues and derive solutions."
-        }
+        {"description" : "Built, support, and maintain 2 Java web applications that used Spring to process transactions from batch and generate dynamic reports for users." },
+        {"description" : "Support and maintain 1 Windows Server that hosted several Windows services for automated file moving/processing and 2 internal .NET applications that were self service tools for the Windows services."},
+        {"description" : "Full engagement in the SDLC."},
+        {"description" : "Automate deployment process using firm wide repository, CI servers and shell scripts."},
+        {"description" : "Communicate and collaborate with multiple teams to troubleshoot issues and derive solutions."}
       ]
     },
     {
       "company" : "CITT, University of Florida",
       "title" : "Educational Technician",
-      "startDate" : "2013-02-01T00:00:00.000Z",
-      "endDate" : "2011-09-01T00:00:00.000Z",
-      "description" : "Worked on static web sites that were hosted on an online learning platform (Sakai). These web sites were courses for professors who taught online courses or had to present online material to students.",
-      "projects" : [
-        {
-          "description" : "Wrote a lot of vanilla XHTML and CSS based on screen mockups provided by designers."
-        },
-        {
-          "description" : "Created graphics (headers) for the online courses based on images provided using Adobe Photoshop."
-        },
-        {
-          "description" : "Assist faculty on managing their online course e.g. teach them how to edit pages for new material, create quizzes, create forum threads."
-        }
-      ]
+      "startDate" : "2013-02-01",
+      "endDate" : "2011-09-01",
+      "description" : "Worked frontend in HTML and CSS with some jQuery or used Photoshop to create header images for class modules.",
+      "projects" : []
     }
   ],
   "education" : [
@@ -65,35 +59,56 @@
       "minor" : [
         {"name" : "Sales Engineering"}
       ],
-      "startDate" : "2009-08-01T00:00:00.000Z",
-      "endDate" : "2013-05-01T00:00:00.000Z",
+      "startDate" : "2009-08-01",
+      "endDate" : "2013-05-01",
       "gpa" : 3.46
     }
   ],
   "volunteering" : [
     {
-      "organization" : "Coder Dojo Tampa Bay",
+      "organization" : "Coder Dojo Tampa Bay - Riverview",
       "title" : "Mentor",
-      "description" : "Bi-weekly meet ups at the library assisting children in coding exercises. Children are generally ages 8 through 14 and utilize resources such as CodeHS and Codecademy. One of my duties is to ensure children understand the fundamental principles of coding.",
-      "startDate" : "2015-02-01T00:00:00.000Z",
-      "endDate" : "Current"
+      "description" : "Educating the future generation on coding using HTML, CSS and Javascript.",
+      "startDate" : "2015-02-01",
+      "endDate" : "2015-10-01"
     }
   ],
-  "skills" : [
-    {"name" : "Java"},
-    {"name" : "Javascript"},
-    {"name" : "HTML"},
-    {"name" : "CSS"},
-    {"name" : "JSON"},
-    {"name" : "Linux"},
-    {"name" : "SQL (RDMS)"},
-    {"name" : "MongoDB"},
-    {"name" : "Jenkins (CI)"}
+  "allSkills" : [
+    {
+      "type" : "Backend",
+      "skillList" : [
+        {"name" : "Java (7, 8)"},
+        {"name" : "Spring (JPA, MVC, Boot)"},
+        {"name" : "SQL (MSSQL)"},
+        {"name" : "REST"},
+        {"name" : "TestNG with Mockito"}
+      ]
+    },
+    {
+      "type" : "Frontend",
+      "skillList" : [
+        {"name" : "Javascript (jQuery)"},
+        {"name" : "HTML/CSS"},
+        {"name" : "JSP/JSTL"},
+        {"name" : "AJAX"}
+      ]
+    },
+    {
+      "type" : "Tools",
+      "skillList" : [
+        {"name" : "CI (Jenkins, TeamCity)"},
+        {"name" : "Git"},
+        {"name" : "Maven"},
+        {"name" : "Nexus"},
+        {"name" : "Atlassian Products (Jira, Confluence, Stash/BitBucket)"},
+        {"name" : "Agile"}
+      ]
+    }
   ],
   "certificates" : [],
   "hobbies" : [
-    {"name" : "Side Projects"},
-    {"name" : "Movies"},
+    {"name" : "Foodie"},
+    {"name" : "Snorkeling"},
     {"name" : "Travel"}
   ]
 }

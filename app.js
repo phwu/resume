@@ -3,24 +3,25 @@ var http = require('http').Server(app);
 
 app.set('ip', (process.env.IP || "127.0.0.1"));
 app.set('port', (process.env.PORT || 8080));
+app.set('path', (process.env.NODE_PATH || __dirname + '/'));
 /****************
 *
 * ROUTING GOODNESS
 *
 *****************/
 
-// routes
+// GETs
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(app.get('path') + 'index.html');
 });
-app.get('/main.js', function(req, res){
-  res.sendFile(__dirname + '/main.js');
+app.get('/resources/main.js', function(req, res){
+  res.sendFile(app.get('path') + 'main.js');
 });
-app.get('/style.css', function(req, res){
-  res.sendFile(__dirname + '/style.css');
+app.get('/resources/style.css', function(req, res){
+  res.sendFile(app.get('path') + 'style.css');
 });
-app.get('/polly.json', function(req, res){
-  res.sendFile(__dirname + '/polly.json');
+app.get('/resources/polly.json', function(req, res){
+  res.sendFile(app.get('path') + 'polly.json');
 });
 
 /****************
@@ -28,8 +29,6 @@ app.get('/polly.json', function(req, res){
 * ESTABLISH WEB SERVER
 *
 *****************/
-
-// let's listen
 http.listen(app.get('port'), app.get('ip'), function(){
   console.log('listening on *:' + app.get('port'));
 });

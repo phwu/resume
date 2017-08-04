@@ -5,7 +5,7 @@ body {
   background-color: #7DBE97;
   padding-top: 6px;
   padding-bottom: 6px;
-  border-bottom: 8px solid #C6E4D2;
+  border-bottom: 15px solid #C6E4D2;
   color: #fff;
   font-size: 1.1em;
 }
@@ -19,9 +19,10 @@ body {
   color: #548195;
 }
 span .big {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 200%;
   background-color: #7DBE97;
+  font-weight: normal;
 }
 footer {
   text-align: center;
