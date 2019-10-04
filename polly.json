@@ -6,7 +6,7 @@
     "street" : "",
     "city" : "Tampa",
     "state" : "FL",
-    "zip" : 
+    "zip" : ""
   },
   "phone" : "(727)687-5287",
   "email" : "pollyhwu@gmail.com",
@@ -56,7 +56,7 @@
       "projects" : [
         {"description" : "Design, develop, and maintain Java web applications using Spring to process transactions from batch files for processing and creating data feeds." },
         {"description" : "Support .NET applications for automated file moving/processing and self service server management."},
-        {"description" : "Automate deployment process using Jenkins pipeline and shell scripts."},
+        {"description" : "Automate deployment process using Jenkins pipeline and shell scripts."}
       ]
     },
     {
