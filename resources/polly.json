@@ -114,10 +114,10 @@
       "skillList" : [
         {"name" : "Java (7, 8)"},
         {"name" : "Spring Framework"},
-        {"name" : "SQL (MSSQL)"},
+        {"name" : "SQL (T-SQL, relational DBs)"},
         {"name" : "REST"},
-		{"name" : "SOAP"},
 		{"name" : "Junit / TestNG"}
+		{"name" : "SOAP"},
       ]
     },
     {
@@ -139,7 +139,8 @@
         {"name" : "Atlassian Products (Jira, Confluence, Stash/BitBucket)"},
         {"name" : "Agile / Scrum / Kanban"},
 		{"name" : "Wireshark / Fiddler"},
-		{"name" : "Solr"}
+		{"name" : "Solr"},
+		{"name" : "SSO"}
       ]
     }
   ],
