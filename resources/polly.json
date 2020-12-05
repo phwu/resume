@@ -116,8 +116,8 @@
         {"name" : "Spring Framework"},
         {"name" : "SQL (T-SQL, relational DBs)"},
         {"name" : "REST"},
-		{"name" : "Junit / TestNG"}
-		{"name" : "SOAP"},
+		{"name" : "Junit / TestNG"},
+		{"name" : "SOAP"}
       ]
     },
     {

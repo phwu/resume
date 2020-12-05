@@ -1,2 +1,3 @@
-Angular application using Express 4.12.4 for basic server routing.
-Localhost is required in order for json file to be loaded in the app container.
+(Very old) Angular static web page utilized as a training exercise for going serverless on AWS.
+(Very recent) JSON resume is uploaded into S3 and ingestable via Lambda through API Gateway.
+Static content deployed through AWS Amplify. 
