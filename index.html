@@ -3,7 +3,7 @@
   <head>
     <title>Resume</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link href="//fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css">
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet" type="text/css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- Optional theme -->
@@ -17,27 +17,42 @@
       <div class="container">
         <div class="row">
         <!-- header template -->
-          <div class="col-md-2" hidden="true">
+          <!-- <div class="col-xs-2" hidden="true">
             <img width="100%" src="https://media.licdn.com/media/p/2/005/09c/3f4/3f28c50.jpg" alt="..." class="img-circle">
-          </div>
-          <div class="col-md-10">
-            <h1>{{resume.name}} <small>{{resume.title}}</small></h1>
-            <div class="row">
-              <div class="col-md-4">
-                <span class="glyphicon glyphicon-home"></span> {{resume.address.city}}, {{resume.address.state}} <br/>
-                <span class="glyphicon glyphicon-earphone"></span> {{resume.phone}}<br/>
+          </div> -->
+          <div class="col-md-12">
+            <h1 class="text-center">{{resume.name}}</h1>
+            <h2 class="text-center">{{resume.title}}</h2>
+			<!-- printer friendly -->
+			<div class="row">
+				<span class="glyphicon glyphicon-home"></span> {{resume.address.city}}, {{resume.address.state}}<br/>
+				<span class="glyphicon glyphicon-earphone"></span> {{resume.phone}}<br/>
+                <!--<span class="glyphicon glyphicon-console"></span> <a href="https://{{resume.repo}}">{{resume.repo}}</a> <br/>-->
+                <span class="glyphicon glyphicon-envelope"></span> {{resume.email}}
+			</div>
+            <!-- <div class="row">
+              <div class="col-md-6 text-right">
+                {{resume.address.city}}, {{resume.address.state}} <span class="glyphicon glyphicon-home"></span><br/>
+                {{resume.phone}} <span class="glyphicon glyphicon-earphone"></span>
+              </div>
+              <div class="col-md-6 text-left">
+                <span ng-hide="resume.www.length === 0"><span class="glyphicon glyphicon-globe"></span> <a href="http://{{resume.www}}">{{resume.www}}</a> <br/></span>
+                <span class="glyphicon glyphicon-console"></span> <a href="https://{{resume.repo}}">{{resume.repo}}</a> <br/>
                 <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:{{resume.email}}">{{resume.email}}</a>
               </div>
-              <div class="col-md-4">
-                <span class="glyphicon glyphicon-globe" ng-hide="resume.www.length === 0"></span> <a href="http://{{resume.www}}">{{resume.www}}</a> <br/>
-                <span class="glyphicon glyphicon-console"></span> <a href="https://{{resume.repo}}">{{resume.repo}}</a> <br/>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
     <div class="container">
+      <!-- blurb template -->
+      <div class="row">
+	  <p></p>
+        <div class="col-md-12 text-center">
+          <p>A software engineer who is ready to use her past successes and failures to improve the livelihoods of the client while looking for growth in learning new technology.</p>
+        </div>
+      </div>
       <h3 ng-hide="resume.experience.length === 0">Experience</h3>
       <!-- job experience template -->
       <div class="row" ng-repeat="job in resume.experience">
@@ -60,6 +75,7 @@
             <span ng-repeat="skill in type.skillList"><span class="label label-default big">{{skill.name}}</span> </span>
         </div></div>
     </div>
+	<br/>
       <h3 ng-hide="resume.education.length === 0">Education</h3>
       <!-- education template -->
       <div class="row" ng-repeat="school in resume.education">
@@ -100,9 +116,9 @@
     </div>
     <br/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="resources/main.js"></script>
+    <script src="main.js"></script>
   </body>
   <footer>
-    <div>This resume was built using AngularJS, JSON and Bootstrap. By Polly Hwu 2015.</div>
+    <div>This resume was built using AngularJS, JSON and Bootstrap. By Polly Hwu 2015 - 2020.</div>
   </footer>
 </html>

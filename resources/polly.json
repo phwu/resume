@@ -1,0 +1,152 @@
+{
+  "imgUrl" : "https://media.licdn.com/media/p/2/005/09c/3f4/3f28c50.jpg",
+  "name" : "Polly Hwu",
+  "title" : "Software Engineer",
+  "address" : {
+    "street" : "",
+    "city" : "Tampa",
+    "state" : "FL",
+    "zip" : ""
+  },
+  "phone" : "(727) 687-5287",
+  "email" : "pollyhwu@gmail.com",
+  "www" : "",
+  "repo" : "www.github.com/phwu",
+  "experience" : [
+    {
+      "company" : "Nielsen Global Media",
+      "title" : "Senior Software Engineer",
+      "startDate" : "2020-01-06",
+      "endDate" : "Current",
+      "description" : "Fullstack lead engineer designing, developing, and supporting Java distributed web applications on an agile team for Program Names.",
+      "projects" : [
+        {"description" : "Design, build and support new business features for existing legacy applications on Linux machines." },
+        {"description" : "Lead an offshore team of four on new projects."},
+		{"description" : "Learn the business and products, document onboarding process for the team and update documentation on existing systems and applications."},
+		{"description" : "Advise and assist two other remote teams on the rewrite projects as a subject matter expert, minimizing the domain knowledge gap (in)between teams."},
+		{"description" : "Work with the business to identify solutions and write out technical requirements / fill out the User Stories for the team."},
+        {"description" : "Create deployment plans, actively assist in deployment, and partake in troubleshooting and fixing production issues."},
+		{"description" : "Work with infrastructure teams to manage and maintain Linux servers (12)."},
+		{"description" : "Familiarize with AWS ecosystem."}
+      ]
+    },
+    {
+      "company" : "myMatrixx, an Express Scripts Company",
+      "title" : "Software Engineer",
+      "startDate" : "2017-05-15",
+      "endDate" : "2020-01-03",
+      "description" : "Fullstack lead engineer designing and developing Java distributed web applications on the cloud and supporting legacy BAU applications on an agile team for Workers' Compensation.",
+      "projects" : [
+        {"description" : "Design, build and support entity REST API web services using Spring." },
+        {"description" : "Integrate entity API adoption into Spring backend services."},
+        {"description" : "Design and build data sync application between distributed database and Stratus using Spring, Kafka and Attunity."},
+		{"description" : "Design, build and support configurable both Identity Provider and Service Provider Single Sign On using SAML 2.0."},
+		{"description" : "Design, build and support cross application communication between distributed Java and Stratus COBOL environments using Spring Integration(TCP) and IBM RAD J2C plugin."},
+		{"description" : "Assist in designing and implementing lift and shift microservices re: integration between the two companies."},
+		{"description" : "Document and host design and architecture sessions on aforementioned technologies to team."},
+		{"description" : "Support a legacy WebSphere Java 4 web application."},
+        {"description" : "Dabbled lightly in the dark arts of React."}
+      ]
+    },
+    {
+      "company" : "myMatrixx",
+      "title" : "Software Engineer I/II",
+      "startDate" : "2015-09-08",
+      "endDate" : "2017-05-15",
+      "description" : "Fullstack engineer working on Spring applications using Java 7/8 with SQL Server 2012 on an agile team working on Workers' Compensation.",
+      "projects" : [
+        {"description" : "Design, build, and support product which processed 835 EDI files with bill information through a rules and pricing engine before adjudication via web service. Created scheduled jobs to check adjudication status for post processing and create 997/824 files to send back to vendor." },
+        {"description" : "Enhance and maintain internal/external portal web application and file processing engine."},
+        {"description" : "Enhance web service REST API by implementing caching using Spring."},
+        {"description" : "Improve CI/CD pipeline."},
+		{"description" : "Improve unit test coverage."},
+		{"description" : "On-call support and participate in deployments."},
+        {"description" : "Document technical and business processes to share with team."}
+      ]
+    },
+    {
+      "company" : "Chase",
+      "title" : "Application Developer",
+      "startDate" : "2013-07-01",
+      "endDate" : "2015-09-08",
+      "description" : "Full-stack engineer working on distributed applications for ACH.",
+      "projects" : [
+        {"description" : "Design, develop, and maintain Java web applications using Spring to process transactions from batch files for processing and creating data feeds." },
+        {"description" : "Support .NET applications for automated file moving/processing and self service server management."},
+        {"description" : "Automate deployment process using Jenkins pipeline and shell scripts."}
+      ]
+    },
+    {
+      "company" : "CITT, University of Florida",
+      "title" : "Educational Technician",
+      "startDate" : "2013-02-01",
+      "endDate" : "2011-09-01",
+      "description" : "Develop single page static content for online courses using HTML/CSS/jQuery; Create graphics in Photoshop; Video edit lectures.",
+      "projects" : []
+    }
+  ],
+  "education" : [
+    {
+      "school" : "University of Florida",
+      "degree" : [
+        {"name" : "Bachelor of Science in Computer Science"}
+      ],
+      "minor" : [
+        {"name" : "Sales Engineering"}
+      ],
+      "startDate" : "2009-08-01",
+      "endDate" : "2013-05-01",
+      "gpa" : 3.46
+    }
+  ],
+  "volunteering" : [
+    {
+      "organization" : "Coder Dojo Tampa Bay - Riverview",
+      "title" : "Mentor",
+      "description" : "Educating the future generation on coding using HTML, CSS and Javascript.",
+      "startDate" : "2015-02-01",
+      "endDate" : "2015-10-01"
+    }
+  ],
+  "allSkills" : [
+    {
+      "type" : "Backend",
+      "skillList" : [
+        {"name" : "Java (7, 8)"},
+        {"name" : "Spring Framework"},
+        {"name" : "SQL (MSSQL)"},
+        {"name" : "REST"},
+		{"name" : "SOAP"},
+		{"name" : "Junit / TestNG"}
+      ]
+    },
+    {
+      "type" : "Frontend",
+      "skillList" : [
+        {"name" : "Javascript (jQuery)"},
+        {"name" : "HTML/CSS"},
+        {"name" : "JSP/JSTL"},
+        {"name" : "AJAX"}
+      ]
+    },
+    {
+      "type" : "Tools/Software",
+      "skillList" : [
+        {"name" : "Git"},
+        {"name" : "Jenkins / Teamcity"},
+        {"name" : "Maven / Gradle"},
+        {"name" : "Nexus/ Artifactory"},
+        {"name" : "Atlassian Products (Jira, Confluence, Stash/BitBucket)"},
+        {"name" : "Agile / Scrum / Kanban"},
+		{"name" : "Wireshark / Fiddler"},
+		{"name" : "Solr"}
+      ]
+    }
+  ],
+  "certificates" : [],
+  "hobbies" : [
+    {"name" : "Gardening"},
+    {"name" : "Snorkeling"},
+    {"name" : "Travel"}
+  ]
+}
