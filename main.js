@@ -1,7 +1,7 @@
 var resumeApp = angular.module('resumeApp', []);
 
 resumeApp.controller('ResumeCtrl', function($scope, $http) {
-	$http.get('https://vw8krqdse3.execute-api.us-east-1.amazonaws.com/prod')
+	$http.get('https://api.pollyhwu.com/resume')
 		.success(function(data) {
 			$scope.resume = data;
 		})
