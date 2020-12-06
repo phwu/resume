@@ -17,18 +17,23 @@
       <div class="container">
         <div class="row">
         <!-- header template -->
-          <!-- <div class="col-xs-2" hidden="true">
-            <img width="100%" src="https://media.licdn.com/media/p/2/005/09c/3f4/3f28c50.jpg" alt="..." class="img-circle">
-          </div> -->
           <div class="col-md-12">
             <h1 class="text-center">{{resume.name}}</h1>
             <h2 class="text-center">{{resume.title}}</h2>
 			<!-- printer friendly -->
 			<div class="row">
-				<span class="glyphicon glyphicon-home"></span> {{resume.address.city}}, {{resume.address.state}}<br/>
-				<span class="glyphicon glyphicon-earphone"></span> {{resume.phone}}<br/>
-                <!--<span class="glyphicon glyphicon-console"></span> <a href="https://{{resume.repo}}">{{resume.repo}}</a> <br/>-->
+			  <div class="col-md-3">
+                <span class="glyphicon glyphicon-console"></span> <a href="https://{{resume.repo}}">{{resume.repo}}</a>
+			  </div>
+			  <div class="col-md-3">
                 <span class="glyphicon glyphicon-envelope"></span> {{resume.email}}
+			  </div>
+			  <div class="col-md-3">
+				<span class="glyphicon glyphicon-home"></span> {{resume.address.city}}, {{resume.address.state}}
+			  </div>
+			  <div class="col-md-3">
+				<span class="glyphicon glyphicon-earphone"></span> {{resume.phone}}
+			  </div>
 			</div>
             <!-- <div class="row">
               <div class="col-md-6 text-right">
@@ -49,8 +54,12 @@
       <!-- blurb template -->
       <div class="row">
 	  <p></p>
-        <div class="col-md-12 text-center">
+	    <div class="col-md-2 text-center">
+		   <img width="100%" src="https://media.giphy.com/media/3o72F8t9TDi2xVnxOE/giphy.gif" alt="about-me-pic" class="img-circle">
+		</div>
+        <div class="col-md-10">
           <p>A software engineer who is ready to use her past successes and failures to improve the livelihoods of the client while looking for growth in learning new technology.</p>
+		  <p>Although my primary role does not include extensive cloud technologies, my interests are in FaaS and reactive programming. My goal is to embrace the paradigm shift and be more involved in stream data processing, functional programming and writing more cloud native, scalable software.</p>
         </div>
       </div>
       <h3 ng-hide="resume.experience.length === 0">Experience</h3>

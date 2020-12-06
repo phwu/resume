@@ -35,7 +35,7 @@
       "title" : "Software Engineer",
       "startDate" : "2017-05-15",
       "endDate" : "2020-01-03",
-      "description" : "Fullstack lead engineer designing and developing Java distributed web applications on the cloud and supporting legacy BAU applications on an agile team for Workers' Compensation.",
+      "description" : "Fullstack lead engineer designing and developing Java distributed web applications on Pivotal Cloud Foundry and supporting legacy BAU applications on prem on an agile team for Workers' Compensation.",
       "projects" : [
         {"description" : "Design, build and support entity REST API web services using Spring." },
         {"description" : "Integrate entity API adoption into Spring backend services."},
