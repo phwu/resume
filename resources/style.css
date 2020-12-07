@@ -33,3 +33,15 @@ footer {
   background-color: #7DBE97;
   line-height: 200%;
 }
+@media print {
+    #about-me{
+        visibility:hidden!important;
+		height:0px!important;
+    }
+}
+@media screen {
+    #about-me{
+        height:50%;
+		width:50%;
+    }
+}
