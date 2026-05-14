@@ -8,26 +8,24 @@
     "state" : "FL",
     "zip" : ""
   },
-  "phone" : "(727) 687-5287",
+  "phone" : "(727)687-5287",
   "email" : "pollyhwu@gmail.com",
   "www" : "",
   "repo" : "www.github.com/phwu",
   "experience" : [
     {
       "company" : "Nielsen Global Media",
-      "title" : "Senior Software Engineer",
+      "title" : "Lead Software Engineer",
       "startDate" : "2020-01-06",
-      "endDate" : "Current",
-      "description" : "Fullstack lead engineer designing, developing, and supporting Java distributed web applications on an agile team for Program Names.",
+      "endDate" : "2022-11-31",
+      "description" : "Fullstack engineer that worked on Java distributed web applications and ETL data pipelines on an agile team for Program Names.",
       "projects" : [
-        {"description" : "Design, build and support new business features for existing legacy applications on Linux machines." },
-        {"description" : "Lead an offshore team of four on new projects."},
-		{"description" : "Learn the business and products, document onboarding process for the team and update documentation on existing systems and applications."},
-		{"description" : "Advise and assist two other remote teams on the rewrite projects as a subject matter expert, minimizing the domain knowledge gap (in)between teams."},
-		{"description" : "Work with the business to identify solutions and write out technical requirements / fill out the User Stories for the team."},
-        {"description" : "Create deployment plans, actively assist in deployment, and partake in troubleshooting and fixing production issues."},
-		{"description" : "Work with infrastructure teams to manage and maintain Linux servers (12)."},
-		{"description" : "Familiarize with AWS ecosystem."}
+	  {"description" : "Became a data engineer for the first time and got to create data pipelines in Apache Spark to unify multi sourced datasets for client media measurement."},
+		  {"description" : "Planned and lead a small team of data engineers to migrate hundreds of millions of records for our clients from a legacy platform into a new and modern one. This including having to transform legacy data and using ElasticSearch to fit the new model. Clients included the big 4 networks ABC, CBS, NBC and FOX!"},
+        {"description" : "Developed and maintained process/algorithm that joined Gracenote site crawled data with client inputted data using Apache Solr." },
+        {"description" : "Lead an offshore team of four on new projects for Local broadcasting."},
+		{"description" : "Worked with the business to identify solutions and write out requirements / filled out the User Stories for the team."},
+		{"description" : "Learned AWS ecosystem and consistently worked on S3, IAM, EC2, Step Functions and CloudWatch."}
       ]
     },
     {
@@ -35,17 +33,16 @@
       "title" : "Software Engineer",
       "startDate" : "2017-05-15",
       "endDate" : "2020-01-03",
-      "description" : "Fullstack lead engineer designing and developing Java distributed web applications on Pivotal Cloud Foundry and supporting legacy BAU applications on prem on an agile team for Workers' Compensation.",
+      "description" : "Backend/systems engineer that worked on Java distributed web applications on Pivotal Cloud Foundry and supporting legacy BAU applications on prem Windows Server on an agile team for Workers' Compensation.",
       "projects" : [
-        {"description" : "Design, build and support entity REST API web services using Spring." },
-        {"description" : "Integrate entity API adoption into Spring backend services."},
-        {"description" : "Design and build data sync application between distributed database and Stratus using Spring, Kafka and Attunity."},
-		{"description" : "Design, build and support configurable both Identity Provider and Service Provider Single Sign On using SAML 2.0."},
-		{"description" : "Design, build and support cross application communication between distributed Java and Stratus COBOL environments using Spring Integration(TCP) and IBM RAD J2C plugin."},
-		{"description" : "Assist in designing and implementing lift and shift microservices re: integration between the two companies."},
-		{"description" : "Document and host design and architecture sessions on aforementioned technologies to team."},
-		{"description" : "Support a legacy WebSphere Java 4 web application."},
-        {"description" : "Dabbled lightly in the dark arts of React."}
+        {"description" : "Designed, developed and maintained entity REST API web services using Spring." },
+        {"description" : "Promoted and integrated enterprise entity API adoption into new WC Spring backend services."},
+        {"description" : "Designed and developed near real time data sync applications between distributed database and Stratus files using Spring, Kafka and Attunity."},
+		{"description" : "Designed, developed and maintained configurable Identity Provider and Service Provider Single Sign On using SAML 2.0 for client needs."},
+		{"description" : "Designed, developed and maintained cross application APIs between distributed Java and Stratus COBOL environments using Spring Integration(TCP) and IBM RAD J2C plugin."},
+		{"description" : "Designed and developed lift and shift of 30+ microservices during company aquisition and replatforming."},
+		{"description" : "Documented and hosted design and architecture sessions on aforementioned technologies to team."},
+		{"description" : "Maintained a legacy WebSphere Java 4 web application."}
       ]
     },
     {
@@ -53,36 +50,30 @@
       "title" : "Software Engineer I/II",
       "startDate" : "2015-09-08",
       "endDate" : "2017-05-15",
-      "description" : "Fullstack engineer working on Spring applications using Java 7/8 with SQL Server 2012 on an agile team working on Workers' Compensation.",
+      "description" : "Fullstack engineer that worked on distributed Spring applications using Java 7/8 with SQL Server 2012 on an agile team for Workers' Compensation.",
       "projects" : [
-        {"description" : "Design, build, and support product which processed 835 EDI files with bill information through a rules and pricing engine before adjudication via web service. Created scheduled jobs to check adjudication status for post processing and create 997/824 files to send back to vendor." },
-        {"description" : "Enhance and maintain internal/external portal web application and file processing engine."},
-        {"description" : "Enhance web service REST API by implementing caching using Spring."},
-        {"description" : "Improve CI/CD pipeline."},
-		{"description" : "Improve unit test coverage."},
-		{"description" : "On-call support and participate in deployments."},
-        {"description" : "Document technical and business processes to share with team."}
+		{"description" : "Part of the team that created a new process to load and adjudicate Physician Dispensed scripts due to client demand. This project lead to contract renewal and expanded business that would then become our 2nd largest client!"},
+		{"description" : "Enhanced and supported state reporting in file generation (837 EDI and NCPDP formats) and submission. Included NCCI and states of FL, TX and CA."},
+        {"description" : "Designed, developed, and supported eligibility which processed 835 EDI files with bill information through a rules and pricing engine before adjudication via web service. Created scheduled jobs to check adjudication status for post processing and create 997/824 files to send back to vendor." },
+        {"description" : "Enhanced and maintained internal/external portal web application and files processing engine."},
+        {"description" : "Analyzed and introduced caching to the apps."},
+        {"description" : "Improved internal CI/CD pipelines by adding additional quality gates."},
+		{"description" : "Improved unit test coverage to >60%."},
+		{"description" : "On-call support and participated in deployments regularly."},
+        {"description" : "Documented technical and business processes."}
       ]
     },
     {
       "company" : "Chase",
       "title" : "Application Developer",
       "startDate" : "2013-07-01",
-      "endDate" : "2015-09-08",
-      "description" : "Full-stack engineer working on distributed applications for ACH.",
+      "endDate" : "2015-09-04",
+      "description" : "Fullstack software engineer that worked on internal distributed applications for ACH payment processing.",
       "projects" : [
-        {"description" : "Design, develop, and maintain Java web applications using Spring to process transactions from batch files for processing and creating data feeds." },
-        {"description" : "Support .NET applications for automated file moving/processing and self service server management."},
-        {"description" : "Automate deployment process using Jenkins pipeline and shell scripts."}
+        {"description" : "Designed, developed, and maintained Java web applications using Spring to process transactions from batch files." },
+        {"description" : "Supported .NET applications for automated file moving/processing and self service server management."},
+        {"description" : "Automated the deployment process by working with enterprise to establish CI/CD pipelines and onboarded all of the teams distributed applications."}
       ]
-    },
-    {
-      "company" : "CITT, University of Florida",
-      "title" : "Educational Technician",
-      "startDate" : "2011-09-01",
-      "endDate" : "2013-02-01",
-      "description" : "Develop single page static content for online courses using HTML/CSS/jQuery; Create graphics in Photoshop; Video edit lectures.",
-      "projects" : []
     }
   ],
   "education" : [
@@ -103,7 +94,7 @@
     {
       "organization" : "Coder Dojo Tampa Bay - Riverview",
       "title" : "Mentor",
-      "description" : "Educating the future generation on coding using HTML, CSS and Javascript.",
+      "description" : "Volunteered at evening meetups to teach kids in grade school how to code or get into coding.",
       "startDate" : "2015-02-01",
       "endDate" : "2015-10-01"
     }
@@ -112,42 +103,50 @@
     {
       "type" : "Backend",
       "skillList" : [
-        {"name" : "Java (7, 8)"},
+        {"name" : "Java"},
+        {"name" : "Kotlin"},
         {"name" : "Spring Framework"},
-        {"name" : "SQL (T-SQL, relational DBs)"},
+        {"name" : "Kafka"},
+        {"name" : "MSSQL"},
+{"name" : "Postgres"},
+{"name" : "Apache Cassandra"},
         {"name" : "REST"},
-		{"name" : "Junit / TestNG"},
-		{"name" : "SOAP"}
+		{"name" : "Junit)"},
+		{"name" : "SOAP"},
+{"name" : "Win and Linux OS"}
       ]
     },
     {
       "type" : "Frontend",
       "skillList" : [
+		{"name" : "React"},
         {"name" : "Javascript (jQuery)"},
         {"name" : "HTML/CSS"},
         {"name" : "JSP/JSTL"},
-        {"name" : "AJAX"}
+		{"name" : "Typescript"}
       ]
     },
     {
       "type" : "Tools/Software",
       "skillList" : [
-        {"name" : "Git"},
-        {"name" : "Jenkins / Teamcity"},
-        {"name" : "Maven / Gradle"},
-        {"name" : "Nexus/ Artifactory"},
-        {"name" : "Atlassian Products (Jira, Confluence, Stash/BitBucket)"},
-        {"name" : "Agile / Scrum / Kanban"},
-		{"name" : "Wireshark / Fiddler"},
-		{"name" : "Solr"},
+		{"name" : "Copilot"},
+		{"name" : "Cursor"},
+		{"name" : "IntelliJ"},
+        {"name" : "Git/Github/Gitlab/BitBucket"},
+        {"name" : "Jenkins/CloudBees"},
+        {"name" : "Maven/Gradle/npm"},
+        {"name" : "Nexus/Artifactory"},
+		{"name" : "Bruno"},
+        {"name" : "Jira and Confluence"},
+        {"name" : "Agile/Scrum/Kanban"},
+		{"name" : "Wireshark/Fiddler"},
+		{"name" : "Apache Solr"},
 		{"name" : "SSO"}
       ]
     }
   ],
   "certificates" : [],
   "hobbies" : [
-    {"name" : "Gardening"},
-    {"name" : "Snorkeling"},
     {"name" : "Travel"}
   ]
 }
